@@ -1,0 +1,88 @@
+:root{
+    --azul-principal : #286fd8;
+    --gris : #989595;
+}
+
+.Agregar{
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Agregar button{
+    background-color: white;
+    color: var(--azul-principal);
+    border: 1px solid var(--azul-principal);
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: var(--azul-principal);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.Agregar button i{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contenedor_formulario{
+    box-sizing: border-box;
+    width: 910px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.contenedor_formulario input{
+    height: 30px;
+    border: 1px solid var(--azul-principal);
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.contenedor_formulario label{
+    font-size: 16px;
+}
+
+.campo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn_GuardarFormulario{
+    margin: auto 0;
+    background-color: var(--azul-principal);
+    color: white;
+    border: 1px solid var(--azul-principal);
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background-color: white;
+        color: var(--azul-principal);
+        cursor: pointer;
+
+    }
+}

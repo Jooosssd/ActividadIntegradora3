@@ -1,0 +1,277 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+
+    --color_primario: #286FDB;
+    --color_texto_primario: #989595;
+    --color_texto_secundario: white;
+
+  }
+
+
+header {
+    width: 100%; 
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.contenedor_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.contenedor_logo-izq {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_logo-izq #farmacia{
+    margin-top: -10px;
+    color: var(--color_texto_primario);
+}
+
+.contenedor_logo-izq #dlaos{
+    margin-top: 45px;
+    margin-left: -47px;
+    background: var(--color_primario);
+    color: var(--color_texto_secundario);
+    font-weight:500;
+    padding: 0px 10px;
+}
+
+.contenedor_logo-izq img {
+    width: 50px; 
+    margin-right: 10px;
+}
+
+.contenedor_titulo {
+    text-align: center;
+}
+
+.contenedor_titulo h1{
+    color: var(--color_texto_primario);
+    margin-left: -90px;
+    font-size: 40px;
+}
+
+.contenedor_user-der {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_user-der img {
+    width: 40px; 
+    margin-left: 10px;
+}
+
+.contenedor_user-der h3{
+    margin-top: -5px;
+    margin-right: -135px;
+    text-align: right;
+}
+
+.contenedor_user-der h5{
+    margin-top: 40px;
+    font-weight: normal;
+    color: var(--color_primario);
+}
+
+.contenedor_botones {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedor_botones button {
+    background: transparent;
+    color: var(--color_primario);
+    border: 2px solid var(--color_primario);
+    border-radius: 5px;
+    width: 150px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: var(--color_primario);
+    color: var(--color_texto_secundario);
+
+}
+
+.contenedorBD{
+    margin: 40px 200px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color_texto_primario);
+    height: 600px;
+}
+
+.contenedor_contenido{
+    display: flex;
+    justify-content: left;
+}
+
+.tituloTabla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.tituloTabla h1{
+    color: var(--color_texto_primario);
+    margin-right: 10px;
+}
+
+.tituloTabla img{
+    margin-left: -10px;
+}
+
+#iconProducto{
+    padding-left: -200px;
+    width: 50px;
+    display: flex;
+}
+
+.contenedor_contenido .busqueda{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.busqueda img{
+    width: 10px;
+}
+
+.busqueda .barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color_primario);
+    border-radius: 20px;
+    width: 70%;
+    height: 20px;
+}
+
+.busqueda .barra #buscar{
+    border: none;
+    width: 90%;
+}
+
+.contenedor_tabla{
+    height: 85.1%;
+}
+
+.acciones {
+    margin: auto;
+    left: 50%;
+}
+
+.icono {
+    margin: 0 5px; 
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer; 
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #286FDB; 
+}
+
+.table th {
+    background-color: #286FDB; 
+    color: white; 
+}
+
+
+.tituloTabla {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#iconProveedor, #iconProducto {
+    width: 60px; 
+    height: 50px;
+}
+
+.contenedor_agregar{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.contenedor_agregar #btnAgregar{
+    background: transparent;
+    color: var(--color_primario);
+    border: 2px solid var(--color_primario);
+    border-radius: 5px;
+    width: 150px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contenedor_salir{
+    margin: 40px 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.contenedor_salir #btn_Salir{
+    background: var(--color_primario);
+    color: var(--color_texto_secundario);
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin: 0 10px;
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+
+#btn_Salir:hover{
+    background: transparent;
+    color: var(--color_primario);
+    border: 1px solid var(--color_primario);
+    width: 100px;
+    margin: 0 10px;
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.iconoTabla{
+    padding: 10px;
+    font-size: 30px;
+    color: var(--color_primario);
+}
